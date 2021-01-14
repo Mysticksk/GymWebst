@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <div id="fb-root"></div>
+
+    <!-- TODO -->
+    <!-- zamiana h1 na h2  -->
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+
+
+        <button class="burger">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times hide"></i>
+        </button>
+
+        <nav class="navigation linear-background">
+            <ul class="navigation__list">
+                <li class="navigation__item home"><a href="#home" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#trainings" class="navigation__link">Training</a></li>
+                <li class="navigation__item"><a href="#tryfree" class="navigation__link">Sign up</a></li>
+                <li class="navigation__item"><a href="#plan" class="navigation__link">Plans</a></li>
+                <li class="navigation__item"><a class="navigation__link login-Input">Join us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-page linear-background">
+
+        <div class="home-page__text" data-aos="fade-right" data-aos-duration="1000">
+            <div class="home-page__text-wrapper">
+                <img src="./images/logo.png" alt="logo">
+                <h1 class="home-page__title">Virtual,<span class="secondary-color">
+                        one-on-one</span> <br> personal training
+                </h1>
+            </div>
+            <p class="home-page__paragraph">
+                We bring the training to you! No matter where you are located our professional trainer will make a
+                custom tailored
+                program that fits you, your goals and any training equipment you have available. You will have
+                access to the premium
+                Viking Forge Fitness app where you can access all your workouts, your meal plan and track your
+                progress.
+            </p>
+
+        </div>
+
+        <div class="home-page__img" data-aos="zoom-in" data-aos-duration="1000">
+            <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/gG_dA32oH44"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe> -->
+            <img src="./images/main.jpg" alt="">
+        </div>
+    </section>
+
+
+    <section id="trainings" class="training-page">
+        <h2 class="training-page__title" data-aos="fade-bottom" data-aos-duration="1000">
+            Something for everyone
+        </h2>
+        <div class="training-page__cards">
+            <div class="training-page__card card1">
+                <h3 class="training-page__card-title">cardio</h3>
+                <p class="training-page__card-paragraph">Join us now.</p>
+
+                <div class="training-page__appear-info linear-background left-hover">
+                    <div class="training-page__appear-container">
+                        <div class="training-page__appear-wrapper1">
+                            <h2 class="training-page__appear-title">Cardio training</h2>
+                            <p class="training-page__appear-paragraph">CUSTOM ONLINE PERSONAL TRAINING</p>
+                            <p class="training-page__appear-name">Tom Johnson, CPT,CNC,PES</p>
+                            <p class="training-page__appear-about">First and foremost I would like to take the time to
+                                welcome you to the Viking Forge Fitness Family!</p>
+                            <p class="training-page__appear-about">Our bread and butter is our elite personal training
+                                services. All of our fitness instructors have a range of 5 to 20yrs
+                                of experience in the fitness industry. During training we are tough but we get the job
+                                done
+                                with no fluff..</p>
+                        </div>
+                        <div class="training-page__appear-wrapper2">
+                            <div class="training-page__appear-button">
+                                <img src="./images/stationary-bike.svg" alt="">
+
+                                <button class="btn">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="training-page__card card2">
+                <h3 class="training-page__card-title">strength</h3>
+                <p class="training-page__card-paragraph">Join us now.</p>
+                <div class="training-page__appear-info linear-background">
+                    <div class="training-page__appear-container">
+                        <div class="training-page__appear-wrapper1">
+                            <h2 class="training-page__appear-title">Strength training</h2>
+                            <p class="training-page__appear-paragraph">CUSTOM ONLINE PERSONAL TRAINING</p>
+                            <p class="training-page__appear-name">Anthony Marc CPT,PES</p>
+                            <p class="training-page__appear-about">First and foremost I would like to take the time to
+                                welcome you to the Viking
+                                Forge Fitness Family!</p>
+                            <p class="training-page__appear-about">My ACE Certification has taken my career to new
+                                levels,
+                                including having my own thriving business. I apply the behavior
+                                change knowledge that I learned from ACE to form meaningful connections with my clients,
+                                building trust. This sets me
+                                apart from other</p>
+                        </div>
+                        <div class="training-page__appear-button">
+                            <img src="./images/weightlifter.svg" alt="">
+
+                            <button class="btn">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="training-page__card card3">
+                <h3 class="training-page__card-title">flexibility</h3>
+                <p class="training-page__card-paragraph">Join us now.</p>
+                <div class="training-page__appear-info linear-background left-hover">
+                    <div class="training-page__appear-container">
+                        <div class="training-page__appear-wrapper1">
+                            <h2 class="training-page__appear-title">Flexibility training</h2>
+                            <p class="training-page__appear-paragraph">CUSTOM ONLINE PERSONAL TRAINING</p>
+                            <p class="training-page__appear-name">Harley Ferrigno CNC,PES</p>
+                            <p class="training-page__appear-about">Is the personal trainer for Sean “P. Diddy” Combs,
+                                Mary
+                                J. Blige, Beyonce, Busta Rhymes, Missy Elliot, and many others in
+                                the biz. He has a line of nutritional supplements sold at GNC stores and a DVD called
+                                90-Day
+                                Transformation.</p>
+                            <p class="training-page__appear-about">I am here to foster a unique fitness experience that
+                                will
+                                allow you to get in
+                                the best shape of your life while allowing
+                                you to feel good about yourself at the same time.</p>
+                        </div>
+                        <div class="training-page__appear-button">
+                            <img src="./images/flexib.svg" alt="">
+
+                            <button class="btn">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="training-page__card card4">
+                <h3 class="training-page__card-title">home gym</h3>
+                <p class="training-page__card-paragraph">Join us now.</p>
+                <div class="training-page__appear-info linear-background">
+                    <div class="training-page__appear-container">
+                        <div class="training-page__appear-wrapper1">
+                            <h2 class="training-page__appear-title">Home training</h2>
+                            <p class="training-page__appear-paragraph">CUSTOM ONLINE PERSONAL TRAINING</p>
+                            <p class="training-page__appear-name">Bob Rock CPT</p>
+                            <p class="training-page__appear-about">Is the personal trainer for L.L. Cool J, Leonardo
+                                DiCaprio, Joey Lawrence, Tyler Perry, Cedric Boswell, and a long list
+                                of athletes, celebrities, and everyday folks.</p>
+                            <p class="training-page__appear-about">You will not feel claustrophobic in this facility
+                                with
+                                our open floor plan full of space for floor exercises and running
+                                laps. We don't believe in the traditional gym format of machine after machine, station
+                                after
+                                station</p>
+                        </div>
+                        <div class="training-page__appear-button">
+                            <img src="./images/homegym.svg" alt="">
+
+                            <button class="btn">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="tryfree" class="sign-up linear-background" data-aos="fade-bottom" data-aos-duration="1000">
+        <h2 class="sign-up__title">
+            Try for <span class="secondary-color">free</span>
+        </h2>
+        <p class="sign-up__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+            eirmod
+            tempor invidunt ut labore et dolore
+            magna aliquyam erat, sed diam voluptua.</p>
+        <button class="btn"><a>Sign up for free</a></button>
+    </section>
+
+
+    <section id="plan" class="plans">
+        <h2 class="plans__title" data-aos="fade-up" data-aos-duration="1000">Plans for all skill levels</h2>
+        <div class="plans__items">
+            <div class="plans__item" data-aos="fade-up" data-aos-duration="1000">
+                <span class="icons-before"><img class="plans__icons" src="./images/basic.svg" alt="basic plan"></span>
+                <h3 class="plans__plan-name">basic</h3>
+                <p class="plans__info">Lorem ipsum dolor sit amet.</p>
+                <button class="btn"><a>Sign up</a></button>
+            </div>
+
+            <div class="plans__item" data-aos="fade-up" data-aos-duration="1000">
+                <span class="icons-before"><img class="plans__icons" src="./images/experienced.svg"
+                        alt="experienced plan"></span>
+                <h3 class="plans__plan-name">experienced</h3>
+                <p class="plans__info">Lorem ipsum dolor sit amet.</p>
+                <button class="btn"><a>Sign up</a></button>
+            </div>
+
+            <div class="plans__item" data-aos="fade-up" data-aos-duration="1000">
+                <span class="icons-before"><img class="plans__icons" src="./images/pro.svg" alt="pro plan"></span>
+                <h3 class="plans__plan-name">pro</h3>
+                <p class="plans__info">Lorem ipsum dolor sit amet.</p>
+                <button class="btn"><a>Sign up</a></button>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+
+
+
+    <div class="login hide linear-background">
+        <div class="login__close">
+
+        </div>
+
+        <h2 class="login__title">Zaloguj się</h2>
+        <div class="login__input-wrapper">
+            <input type="text" name="userLogin" class="login__box" placeholder="E-mail lub numer telefonu" required>
+            <input type="text" name="userPassword" class="login__box" placeholder="Hasło" required>
+        </div>
+        <button class="btn login__loginBtn">Zaloguj się</button>
+        <div class="login__rememberMeDiv">
+            <div class="login__remember-wrapper">
+                <input type="checkbox" name="rememberInput" class="login__remember" required>
+                <label class="login__remember" for="rememberInput"><span> Remember me </span></label>
+            </div>
+            <a href="">Need help?</a>
+        </div>
+        <div class="login__text-container">
+            <p class="login__paragraph">Don't have an account yet?</p>
+            <a class="login__register" href="">Sign up now</a>
+        </div>
+    </div>
+    <section class="informations" data-aos="fade-up" data-aos-duration="1000">
+        <div class="contact">
+
+            <div class="contact__info" data-aos="fade-right" data-aos-duration="1500">
+                <h3 class="contact__title">Contact Info</h3>
+
+                <div class="contact__flex">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p class="contact__informations">2912 Meadownbrook Road Los Angeles, CA <br> 90017</p>
+                </div>
+
+                <div class="contact__flex">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <p class="contact__informations">BodyflexGym@gmail.com</p>
+                </div>
+
+                <div class="contact__flex">
+                    <i class="fas fa-phone-alt"></i>
+                    <p class="contact__informations">310-386-1623</p>
+                </div>
+
+                <div class="contact__socials ">
+                    <a class="social-link" href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="social-link" href="https://twitter.com/?lang=pl" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="social-link" href="https://www.instagram.com/?hl=pl" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="social-link" href="https://pl.pinterest.com/" target="_blank"><i
+                            class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="contact__form" data-aos="fade-left" data-aos-duration="1500">
+                <h2 class="contact__title mgb-2">Send a message</h2>
+                <form>
+                    <div class="contact__form-box">
+                        <div class="contact__inputbox w50 grid-one">
+                            <input class="contact__input-text" type=" text" required="required">
+                            <span>First Name</span>
+                        </div>
+
+                        <div class="contact__inputbox w50 grid-two">
+                            <input class="contact__input-text" type=" text" required="required">
+                            <span>Last Name</span>
+                        </div>
+
+                        <div class="contact__inputbox w50 grid-three">
+                            <input class="contact__input-text" type=" text" required>
+                            <span>Email Address</span>
+                        </div>
+
+                        <div class="contact__inputbox w50 grid-four">
+                            <input class="contact__input-text" type="text" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="">
+                            <div class="contact__inputbox grid-five">
+                                <textarea class="contact__textarea" name="" required></textarea>
+                                <span>Write your message here...</span>
+                            </div>
+                            <div class="contact__inputbox grid-six">
+                                <input class="contact__submit button-input" type="submit" value="Send">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

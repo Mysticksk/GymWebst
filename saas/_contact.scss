@@ -1,0 +1,141 @@
+.informations{
+    background: url(/images/form.jpg) no-repeat center;
+}
+.contact{
+    width: 20%;
+    margin-bottom: 10em;
+    position: relative;
+
+
+    &__info{
+        margin: 2em;
+        height: 500px;
+        width: 120%;
+        min-width: 300px;
+        max-width: 400px;
+        position: relative;
+        z-index: 100;
+        background: #fff;
+        padding: 25px 45px;
+        opacity: 0.9;
+        overflow-wrap: anywhere;
+
+    }
+    &__flex{
+        margin: 2em 0;
+        display: flex;
+        align-items: center;
+        opacity: 0.8;
+        line-height: 1.5;
+
+        &:hover{
+            color: rgb(58, 56, 56);
+        }
+        
+        & i{
+            font-size: 2rem;
+            
+        }
+    }
+
+    &__title{
+        font-size: 2rem;
+        opacity: 0.8;
+    }
+    &__informations{
+        margin-left: 1em;
+    }
+
+    &__socials{
+        opacity: 0.8;
+        font-size: 2rem;
+    }   
+
+
+    &__form{
+        position: absolute;
+        background: $secondary-color;
+        opacity: 0.9;
+        width: auto;
+        z-index: 1;
+        top: -45px;
+        height: 120%;
+        padding: 70px 50px;
+        padding-left: 280px;
+        margin-left: 55%;
+        max-width: 870px;
+    }
+
+    &__form-box{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &__inputbox{
+        width:100% ;
+        position: relative;
+        margin: 0 0 35px 0;
+        
+    }
+
+    &__textarea{
+        width: 100%;
+        padding: 15px 0;
+        background: #fff;
+        opacity: 0.8;
+        font-size: 1.2rem;
+        border: none;
+    }
+    
+    &__submit{
+        width: 100%;
+        cursor: pointer;
+        &:hover{
+            background:rgba(18, 18, 3, 0.59);
+            opacity: 0.8;
+            color: #fff;
+            
+        }
+    }
+
+    & input{
+        width: 100%;
+        padding: 5px 0px;
+        font-size: 1.1rem;
+        border: none;
+        background: #fff;
+        opacity: 0.8;
+        border-bottom: 1px solid #000;
+        outline-color: none;
+        margin-right: 7em;
+    }
+
+
+
+    & span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 5px;
+        font-size: 1rem;
+        transition: .5s;
+        pointer-events: none;
+    }
+
+
+    & input:focus ~ span,
+    & textarea:focus ~ span,
+    & input:valid ~ span,
+    & textarea:valid ~ span{
+        transform: translateY(-35px);
+        font-size: .8rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #fff;
+        
+    }
+}
+

@@ -1,0 +1,48 @@
+.plans{
+    text-align: center;
+    &__title{
+        margin: 2.5em 0;
+        font-size: 2rem;
+    }
+
+    
+    .plans__items{
+        display: grid;
+        gap: 30px;
+        margin-bottom: 5em;
+    }
+
+
+
+
+    &__icons{
+            width: 50px;
+            margin-bottom: 1em;
+            position: relative;
+    }
+
+    
+
+    &__plan-name{
+            margin-bottom: 1em;
+
+    }
+
+    &__info{
+            margin-bottom: 2em;
+    }
+}
+
+.icons-before{
+    position: relative;
+    &::before{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -50px;
+            left: 0;
+            background: #C4C4C4;
+            border-radius: 50px;
+        }
+}

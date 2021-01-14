@@ -1,0 +1,116 @@
+.training-page{
+    
+    &__title{
+        text-align: center;
+        margin-bottom: 2em;
+        font-size: 2rem;
+        color: #707070;
+    }
+
+    &__cards{   
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75%;
+    margin: 0 auto;
+
+    }
+    
+    &__card{
+            margin: 0 auto;
+            height: 300px;
+            width: 150px;
+            margin-bottom: 2em;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center; 
+            flex-direction: column;
+            box-shadow:0 0 10px #000000;
+            transition: transform .5s ease-in-out;
+            cursor: pointer;
+            font-weight: bold;
+            line-height: 2;
+            position: relative;
+            &:hover{
+                transform: scale(1.1);
+                transform: translateX(-140px);
+                border-radius: 10px 0 0 10px;
+                
+            }
+            &:hover > .training-page__appear-info{
+            display: block;
+            -webkit-animation: fadeIn 2s;
+            animation: fadeIn 2s;
+            } 
+            
+        }
+
+        &__appear-info{
+            color: #fff;
+            text-align: start;
+            position: absolute;
+            height: 18.125em;
+            width: 18em;
+            top: 0;
+            right: -18em;
+            z-index: -100;
+            padding: 2em;
+            border-radius:0 10px 10px 0;
+            display: none;
+            overflow: hidden;
+            box-shadow:0 0 10px #000000;
+            margin-top: 5px;
+            
+        }
+    &__appear-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+        
+        &__appear-title{
+                font-size: 1rem;
+                max-width: 250px;
+            }
+
+            &__appear-paragraph{
+                color:$secondary-color;
+                
+            }
+        &__appear-name{
+            font-size: .6rem;
+            opacity: .8;
+            margin-bottom: 1em;
+        }
+
+        &__appear-about{
+            font-size: .4rem;
+            opacity: .8;
+            margin-bottom: .5em;
+        }
+
+        &__appear-button{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;  
+            
+            & img{
+                width: 20%;
+            }
+        }
+
+        &__card-title{
+            font-size: 1.5rem;
+            color: $secondary-color;
+        }
+        &__card-paragraph{
+            font-size: 1rem;
+            color: #fff;
+            margin-top: 1em;
+        }
+    
+}
+
+
+

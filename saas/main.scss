@@ -1,0 +1,213 @@
+@import "variables";
+@import "navigation";
+@import "section1";
+@import "trainings";
+@import "sign-up";
+@import "plans";
+@import "login";
+@import "contact";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #f8f7f7;
+    // background: #000;
+    // color: #fff;
+}
+.wrapper{
+    width: 100%;
+}
+
+.active {
+    transform: translateX(350px)
+}
+
+
+.secondary-color{
+    color: $secondary-color;
+}
+
+.linear-background{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2b2a2a 94%);
+}
+.fa-bars{
+    color: #fff;
+}
+
+.card1{
+    background: url(/images/cardio.jpg);
+    background-size: cover;
+}
+
+.card2{
+    background: url(/images/strength1.jpg);
+    background-size: cover;
+}
+
+.card3{
+    background: url(/images/flexibility.jpg);
+    background-size: cover;
+}
+
+.card4{
+    background: url(/images/homeGym.jpg);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn{
+    padding: 10px 20px;
+    background: #C4461C;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.social-link{
+    color: #000;
+    margin-right: .8em;
+    cursor: pointer;
+}
+
+.social-link:hover{
+    color: $secondary-color;
+}
+.social-link:last-child{
+    margin: 0;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+.fa-bars,
+.fa-times{
+    color:$secondary-color;
+}
+
+.hide {
+    display:none !important ;
+}
+
+.w50{
+    width: 47%;
+}
+
+.mgb-2{
+    margin-bottom: 2em ;
+}
+
+.informations{
+    height: 700px;
+    padding: 5em;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+@media (max-width:1424px){
+    .contact__form-box{
+        flex-direction: column;
+    }
+    .contact__title{
+        font-size: 1.5rem;
+    }
+    .w50{
+        width: 100%;
+    }
+    .mgb-2{
+        margin-bottom: .5em;
+    }
+}
+
+@media (min-width: 768px){
+    .home-page__text-wrapper{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 20px
+    }
+    .home-page__text-wrapper img{
+        width: 100%;
+        margin: auto 0;
+    }
+    .training-page__card:hover{
+        transform: translateX(-100px)
+    }
+}
+
+@media (min-width: 1224px){
+    .training-page__appear-info{
+        height: 24.375em;
+        width: 25em;
+        right: -25em;
+    }
+    .training-page__card{
+        height: 400px;
+        width: 250px;
+    }
+    .home-page{
+        display: flex;
+    }
+    .home-page__text{
+        width: 50%;
+    }
+    .contact{
+        margin-left: 12em;
+    }
+    .contact input{
+        padding: 5px 50px;
+        margin-right: 12em;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .training-page__cards{   
+        grid-template-columns: repeat(2,1fr);
+    }
+    .plans__items{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .plans{
+        grid-template-columns: repeat(3.1fr) !important;
+    }
+    .training-page__card:hover{
+        transform: translateX(-150px)
+    }
+
+};
+
+
+
+@media (min-width: 600px){
+    .training-page__appear-info{
+        height: 24.375em;
+        width: 20em;
+        right: -20em;
+    }
+    .training-page__card{
+        height: 400px;
+        width: 200px;
+    }
+}

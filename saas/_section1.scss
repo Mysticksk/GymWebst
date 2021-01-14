@@ -1,0 +1,36 @@
+.home-page{
+    text-align: center;
+    color: #fff;
+    padding: 4em 10% 2em 10%;
+    margin-bottom: 2em;
+
+    &__text{
+        margin: auto;
+    }
+
+    & img{
+        width: 30%;
+        transition: transform .4s ease-in;
+        // &:hover{
+        //     transform: scale(1.05);
+        // }
+    }
+
+    &__title{
+        margin-bottom: 1em;
+        font-size: 3rem;
+    }
+
+    &__paragraph{
+        margin-bottom: 2em;
+    }
+
+    &__img{
+        
+        img{
+            width: 100%;
+            margin-left: 2em;
+            box-shadow: 2px 2px 20px 0 #c4c4c4;
+        }
+    }
+}
